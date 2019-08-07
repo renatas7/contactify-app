@@ -1,0 +1,13 @@
+.navContainer {
+  width: 65rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  background-color: var(--color__header-dark);
+  height: 6rem;
+  width: 100%;
+  min-width: 800px;
+  padding-top: auto;
+}

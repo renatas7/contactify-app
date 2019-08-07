@@ -3,7 +3,7 @@ import { constants } from '../constants';
 const INITIAL_STATE = {
   globalLoaderModalVisible: false,
   globalErrorModalVisible: false,
-  globalInfoModalVisible: false
+  globalInfoModalVisible: false,
 };
 
 export const modalsReducer = (state = INITIAL_STATE, action) => {
@@ -13,7 +13,7 @@ export const modalsReducer = (state = INITIAL_STATE, action) => {
       const key: string = payload.modalName + 'Visible';
       return {
         ...state,
-        [key]: payload.visible
+        [key]: payload.visible,
       };
     default:
       return state;

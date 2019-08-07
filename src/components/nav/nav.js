@@ -7,21 +7,21 @@ import { config } from './../../api/config';
 const Nav = () => {
   const links = [
     {
-      name: config.PAGES.home,
-      url: config.APP_PATHS.home
+      name: config.PAGES.dashboard,
+      url: config.APP_PATHS.dashboard,
     },
     {
-      name: config.PAGES.first,
-      url: config.APP_PATHS.first
+      name: config.PAGES.contacts,
+      url: config.APP_PATHS.contacts,
     },
     {
-      name: config.PAGES.second,
-      url: config.APP_PATHS.second
-    }
+      name: config.PAGES.notifications,
+      url: config.APP_PATHS.notifications,
+    },
   ];
 
   const renderLinks = () =>
-    links.map(({ name, icon, url }) => (
+    links.map(({ name, url }) => (
       <li className={styles.item} key={name}>
         <NavLink
           className={styles.link}

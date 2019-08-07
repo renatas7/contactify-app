@@ -9,7 +9,7 @@ export class Api {
   static async withoutOAuth(options) {
     const finalOptions = {
       json: true,
-      ...options
+      ...options,
     };
     return await request(finalOptions);
   }
@@ -17,7 +17,7 @@ export class Api {
   static async updateDashboardDetails() {
     const options = {
       method: 'GET',
-      url: 'https://jsonplaceholder.typicode.com/users'
+      url: 'https://jsonplaceholder.typicode.com/users',
     };
 
     return await Api.withoutOAuth(options);

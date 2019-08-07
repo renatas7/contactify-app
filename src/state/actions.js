@@ -3,5 +3,5 @@ import { modalActions } from './modals/ModalsActions';
 
 export const actions = {
   dashboard: userActions,
-  modal: modalActions
+  modal: modalActions,
 };

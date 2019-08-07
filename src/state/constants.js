@@ -3,5 +3,5 @@ import { modalsConstants } from './modals/ModalsConstants';
 
 export const constants = {
   dashboard: dashboardConstants,
-  modals: modalsConstants
+  modals: modalsConstants,
 };

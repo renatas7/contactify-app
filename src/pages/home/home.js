@@ -4,15 +4,12 @@ import { connect } from 'react-redux';
 import { WithSpinner } from '../../components';
 
 const Home = ({ dispatch, loading }) => {
-  const fetchSelectedLocation = useCallback(
-    id => {
-      dispatch(actions.dashboard.updateDashboardAction());
-    },
-    [dispatch]
-  );
+  const fetchData = useCallback(() => {
+    dispatch(actions.dashboard.updateDashboardAction());
+  }, [dispatch]);
   useEffect(() => {
-    fetchSelectedLocation();
-  }, [fetchSelectedLocation]);
+    fetchData();
+  }, [fetchData]);
 
   return (
     <WithSpinner loading={loading}>
@@ -23,7 +20,7 @@ const Home = ({ dispatch, loading }) => {
 
 const mapStateToProps = state => ({
   dashboardData: state.dashboardState.dashboardData,
-  loading: state.dashboardState.isOnSync
+  loading: state.dashboardState.isOnSync,
 });
 
 export default connect(mapStateToProps)(Home);

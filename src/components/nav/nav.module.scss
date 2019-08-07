@@ -15,17 +15,16 @@
   display: flex;
   align-items: center;
   font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--color__black);
+  font-weight: 600;
+  color: var(--color__white);
   text-decoration: none;
-  padding: 0.5rem 3rem 0.5rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   background: var(--color__nav-bg);
 
   &:hover,
   &:active,
   &.active {
-    color: var(--color__primary);
-    background: red;
+    background: #008591;
   }
 }
 

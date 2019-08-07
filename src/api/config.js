@@ -1,12 +1,12 @@
 export const config = {
   APP_PATHS: {
-    home: '/home',
-    first: '/first',
-    second: '/second'
+    dashboard: '/dashboard',
+    contacts: '/contacts',
+    notifications: '/notifications',
   },
   PAGES: {
-    home: 'Home',
-    first: 'First',
-    second: 'Second'
-  }
+    dashboard: 'DASHBOARD',
+    contacts: 'CONTACTS',
+    notifications: 'NOTIFICATIONS',
+  },
 };

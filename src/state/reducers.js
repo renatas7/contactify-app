@@ -4,5 +4,5 @@ import { modalsReducer } from './modals/ModalsReducer';
 
 export const reducers = combineReducers({
   dashboardState: userReducer,
-  modalsState: modalsReducer
+  modalsState: modalsReducer,
 });

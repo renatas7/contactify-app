@@ -1,26 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import cn from 'classnames';
 import styles from './button.module.scss';
 
-const Button = ({ children, color, url, classes = {}, ...rest }) => {
-  if (url) {
+const Button = ({ type, children, ...rest }) => {
+  if (type === 'dropdown') {
     return (
-      <Link
-        className={cn(styles.button, styles[color], classes.button)}
-        to={url}
+      <button
+        className={cn(styles.dropbtn, styles.dropdownMainStyle)}
         {...rest}
       >
         {children}
-      </Link>
+      </button>
     );
-  }
-  if (color === 'xls') {
+  } else if (type === 'filter') {
     return (
-      <button
-        className={cn(styles.button, styles[color], classes.button)}
-        {...rest}
-      ></button>
+      <button className={cn(styles.button)} {...rest}>
+        {children}
+      </button>
+    );
+  } else if (type === 'add') {
+    return (
+      <button className={cn(styles.button)} {...rest}>
+        {children}
+      </button>
     );
   }
 };

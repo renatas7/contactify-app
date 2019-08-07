@@ -4,16 +4,16 @@ import Home from './pages/home/home';
 import First from './pages/first/first';
 import Second from './pages/second/second';
 import { config } from './api/config';
-import { Nav } from './components';
+import { Header } from './blocks';
 
 const Routes = () => {
   return (
     <Router>
-      <Nav />
+      <Header />
       <Switch>
-        <Route path={config.APP_PATHS.home} exact component={Home} />
-        <Route path={config.APP_PATHS.first} exact component={First} />
-        <Route path={config.APP_PATHS.second} exact component={Second} />
+        <Route path={config.APP_PATHS.dashboard} component={Home} />
+        <Route path={config.APP_PATHS.contacts} exact component={First} />
+        <Route path={config.APP_PATHS.notifications} component={Second} />
       </Switch>
     </Router>
   );

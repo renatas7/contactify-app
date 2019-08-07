@@ -2,7 +2,7 @@ import { constants } from '../constants';
 
 const INITIAL_STATE = {
   isOnSync: false,
-  dashboardData: {}
+  dashboardData: {},
 };
 
 export const userReducer = (state = INITIAL_STATE, action) => {
@@ -10,17 +10,17 @@ export const userReducer = (state = INITIAL_STATE, action) => {
     case constants.dashboard.SET_ON_SYNC_FLAG:
       return {
         ...state,
-        isOnSync: action.flag
+        isOnSync: action.flag,
       };
     case constants.dashboard.UPDATE_DASHBOARD_DATA:
       return {
         ...state,
-        dashboardData: action
+        dashboardData: action,
       };
     case constants.dashboard.SET_DASHBOARD_DATA:
       return {
         ...state,
-        dashboardData: action.payload
+        dashboardData: action.payload,
       };
 
     default:
