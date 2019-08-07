@@ -1,0 +1,49 @@
+.button {
+  --button__primary-text: #fff;
+  --button__primary-bg: var(--color__primary);
+  --button__primary-hover: #eb5d10;
+
+  --button__dim-text: var(--color__primary);
+  --button__dim-bg: var(--color__dim);
+  --button__dim-hover: #fcdece;
+
+  --button__light-text: var(--color__grey-darker);
+  --button__light-bg: #d4d2d3;
+  --button__light-hover: #c3c1c2;
+
+  --button__dark-text: #fff;
+  --button__dark-bg: var(--color__grey-darker);
+  --button__dark-hover: #484849;
+
+  --button__outline-text: var(--color__grey-darker);
+  --button__outline-hover: rgba(0, 0, 0, 0.05);
+}
+
+.button {
+  padding: 1.4rem 4.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius__md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // &:focus {
+  //   outline: none;
+  // }
+
+  &.primary {
+    color: black;
+    background: grey;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: red;
+    }
+  }
+}
