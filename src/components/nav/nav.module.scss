@@ -18,7 +18,7 @@
   font-weight: 600;
   color: var(--color__white);
   text-decoration: none;
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 1.1rem 3rem 1rem 3rem;
   background: var(--color__nav-bg);
 
   &:hover,
@@ -30,4 +30,13 @@
 
 li:last-child {
   border-radius: 0 1rem 0 0;
+}
+
+.container {
+  width: 50rem;
+  height: var(--height__button-bg);
+  padding: 0.25rem;
+  background-color: var(--color__nav-bg);
+  text-align: center;
+  border-radius: var(--radius__button-bg);
 }

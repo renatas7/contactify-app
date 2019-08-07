@@ -4,7 +4,7 @@ import cn from 'classnames';
 import styles from './dropdown.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faComments } from '@fortawesome/free-solid-svg-icons';
 import { faWrench } from '@fortawesome/free-solid-svg-icons';
@@ -18,8 +18,9 @@ const Dropdown = () => {
   return (
     <div className={styles.dropdown}>
       <Button type="dropdown" onClick={() => setIsOpen(!isOpen)}>
-        <FontAwesomeIcon icon={faUser} className={styles.faUser} /> Jorah
-        Mormont
+        <FontAwesomeIcon icon={faUser} className={styles.faUser} />
+        Jorah Mormont
+        <FontAwesomeIcon icon={faCaretDown} className={styles.arrow} />
       </Button>
 
       <div className={cn(styles.dropdownContent, isOpen ? styles.show : '')}>

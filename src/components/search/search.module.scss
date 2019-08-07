@@ -1,18 +1,22 @@
 .searchBox {
   width: 100%;
-  height: 3rem;
-  border-radius: 1.4rem;
-  padding-left: 1.4rem;
+  height: var(--height__button-bg);
+  border-radius: var(--radius__button-bg);
+  padding-left: var(--radius__button-bg);
+  border: 2px solid #132428;
+  font-size: 14px;
+  position: relative;
 }
 
 .searchIcon {
   float: right;
   position: relative;
-  margin-top: -2rem;
+  margin-top: -2.7rem;
   color: grey;
-  margin-right: 1.1rem;
+  margin-right: 1.4rem;
+  font-size: 14px;
 }
 
 .searchBoxContainer {
-  width: 18rem;
+  width: 22rem;
 }

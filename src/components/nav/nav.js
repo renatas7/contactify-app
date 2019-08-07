@@ -34,9 +34,11 @@ const Nav = () => {
     ));
 
   return (
-    <nav className={styles.nav}>
-      <ul className={styles.list}>{renderLinks()}</ul>
-    </nav>
+    <div className={styles.container}>
+      <nav className={styles.nav}>
+        <ul className={styles.list}>{renderLinks()}</ul>
+      </nav>
+    </div>
   );
 };
 

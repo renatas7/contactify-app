@@ -1,16 +1,20 @@
-/*dropwdown css*/
+.dropdown {
+  width: 17rem;
+}
 
 .dropdownContent {
   display: none;
-  position: absolute;
-  right: 50px;
-  margin-top: 14px;
-
-  background-color: #00a2bd;
-  width: 220px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-top: 0.87rem;
+  margin-right: 2rem;
+  background-color: #09a2c1;
+  width: 17rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-  border-radius: 1vh;
+  border-radius: 0.5rem 0 0.5rem 0.5rem;
+  :last-child {
+    border-bottom: none;
+  }
 }
 
 .dropdownContent:after,
@@ -27,32 +31,31 @@
 
 .dropdownContent:after {
   border-color: rgba(0, 163, 194, 0);
-  border-bottom-color: #00a3c2;
-  border-width: 10px;
-  margin-left: -10px;
+  border-bottom-color: #0ba1c0;
+  border-width: 0.6rem;
+  margin-left: -0.6rem;
 }
 .dropdownContent:before {
   border-color: rgba(194, 225, 245, 0);
-  border-bottom-color: #c2e1f5;
-  border-width: 10px;
-  margin-left: -10px;
+  border-bottom-color: #0ba1c0;
+  border-width: 0.6rem;
+  margin-left: -0.6rem;
 }
 
 .dropdownContent div {
   color: #ffffff;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
-  border-bottom: 0.5px solid #005956;
+  border-bottom: 1px solid #3797aa;
+  :last-child {
+    border-bottom: none;
+  }
 }
 
 .show {
   display: block;
 }
-
-//   .dropdown:hover .dropdownContent {
-//     display: block;
-//   }
 
 .dropdownContent a:hover {
   background-color: #008591;
@@ -60,5 +63,9 @@
 
 .faUser {
   position: relative;
-  margin-right: 8px;
+  margin-right: 1.5rem;
+}
+
+.arrow {
+  margin-left: 1.5rem;
 }

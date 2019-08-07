@@ -1,13 +1,18 @@
 .navContainer {
-  width: 65rem;
+  width: 75rem;
   display: flex;
   justify-content: space-between;
+  margin-top: 0.87rem;
 }
 
 .container {
   background-color: var(--color__header-dark);
   height: 6rem;
   width: 100%;
-  min-width: 800px;
+  min-width: 1200px;
   padding-top: auto;
+
+  & div:first-child {
+    margin-top: 0rem;
+  }
 }
