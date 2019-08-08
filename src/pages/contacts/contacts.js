@@ -1,8 +1,13 @@
 import React from 'react';
-import { Filter } from './../../containers';
+import { Filter, ContactList } from './../../containers';
 
 const Contacts = () => {
-  return <Filter />;
+  return (
+    <>
+      <Filter />
+      <ContactList />
+    </>
+  );
 };
 
 export default Contacts;

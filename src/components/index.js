@@ -8,3 +8,4 @@ export { default as Paper } from './paper/paper.js';
 export { default as Dropdown } from './dropdown/dropdown.js';
 export { default as FilterDropdown } from './filterDropdown/filterDropdown.js';
 export { default as CheckBox } from './checkbox/checkbox.js';
+export { default as UserCard } from './userCard/userCard.js';

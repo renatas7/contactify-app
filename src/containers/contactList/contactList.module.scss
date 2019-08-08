@@ -1,0 +1,9 @@
+.container {
+  background: linear-gradient(to bottom right, #007f79, #0b3f6b);
+  min-height: 48rem;
+  width: 100%;
+  padding-top: 2rem;
+  & div:first-child {
+    margin-top: 0rem;
+  }
+}
