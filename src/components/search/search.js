@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './search.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
 
 const Search = ({ type }) => {
   if (type === 'user') {
@@ -18,6 +19,10 @@ const Search = ({ type }) => {
       </div>
     );
   }
+};
+
+Search.propTypes = {
+  type: PropTypes.oneOf(['user', 'filter']),
 };
 
 export default Search;

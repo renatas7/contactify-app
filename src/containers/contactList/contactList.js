@@ -7,7 +7,13 @@ const ContactList = () => {
   return (
     <div className={styles.container}>
       <Paper type="header">
-        <UserCard />
+        <UserCard
+          name={'jon'}
+          surname={'Doe'}
+          city={'Vilnius'}
+          email={'jondeo@gmail.com'}
+          phone={'+37064578945'}
+        />
       </Paper>
     </div>
   );
