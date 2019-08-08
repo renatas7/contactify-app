@@ -1,13 +1,14 @@
 .navContainer {
-  width: 75rem;
+  width: 70rem;
   display: flex;
   justify-content: space-between;
-  margin-top: 0.87rem;
+  align-items: center;
+  height: var(--height__button-bg);
 }
 
 .container {
   background-color: var(--color__header-dark);
-  height: 6rem;
+  height: 9rem;
   width: 100%;
   min-width: 1200px;
   padding-top: auto;
@@ -15,4 +16,12 @@
   & div:first-child {
     margin-top: 0rem;
   }
+}
+
+.leftContainer {
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90rem;
 }

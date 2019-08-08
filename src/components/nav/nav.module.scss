@@ -18,7 +18,7 @@
   font-weight: 600;
   color: var(--color__white);
   text-decoration: none;
-  padding: 1.1rem 3rem 1rem 3rem;
+  padding: 0.9rem 3rem 0.75rem 3rem;
   background: var(--color__nav-bg);
 
   &:hover,
@@ -33,7 +33,7 @@ li:last-child {
 }
 
 .container {
-  width: 50rem;
+  width: 47rem;
   height: var(--height__button-bg);
   padding: 0.25rem;
   background-color: var(--color__nav-bg);

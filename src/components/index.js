@@ -6,3 +6,5 @@ export { default as Logo } from './logo/logo.js';
 export { default as Search } from './search/search.js';
 export { default as Paper } from './paper/paper.js';
 export { default as Dropdown } from './dropdown/dropdown.js';
+export { default as FilterDropdown } from './filterDropdown/filterDropdown.js';
+export { default as CheckBox } from './checkbox/checkbox.js';

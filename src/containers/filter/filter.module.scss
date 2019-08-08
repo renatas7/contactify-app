@@ -1,0 +1,34 @@
+.container {
+  background: linear-gradient(to right, #186662, #163957);
+  height: 10rem;
+  width: 100%;
+  min-width: 1200px;
+  padding-top: auto;
+
+  & div:first-child {
+    margin-top: 0rem;
+  }
+}
+
+.filterContainer {
+  width: 62rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plusCircle {
+  font-size: 2.8rem;
+  color: #006862;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #006862;
+  margin-left: -3rem;
+}
+
+.buttonText {
+  top: -0.5rem;
+  left: 1rem;
+  position: relative;
+}

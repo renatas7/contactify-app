@@ -1,5 +1,12 @@
 .container {
   display: flex;
   justify-content: space-between;
+}
+
+.margins {
   margin: 0.8rem 3rem;
+}
+
+.align {
+  align-items: center;
 }

@@ -1,0 +1,28 @@
+.checkbox {
+  display: flex;
+  font-size: 1.2rem;
+  height: 1.5rem;
+
+  label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 0.5rem;
+  }
+  input {
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    background: #ddd;
+    outline: 1px solid #000;
+  }
+}
+
+// .checkbox {
+//     margin-left: 30px;
+//     margin-top: 10px;
+//     width: 30px;
+//     height: 15px; }
