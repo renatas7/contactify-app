@@ -1,7 +1,7 @@
-import { userActions } from './dashboard/DashboardActions';
+import { userActions } from './contacts/contactsAction';
 import { modalActions } from './modals/ModalsActions';
 
 export const actions = {
-  dashboard: userActions,
+  contacts: userActions,
   modal: modalActions,
 };

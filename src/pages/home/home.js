@@ -1,16 +1,8 @@
-import React, { useEffect, useCallback } from 'react';
-import { actions } from './../../state/actions';
+import React from 'react';
 import { connect } from 'react-redux';
 import { WithSpinner } from '../../components';
 
-const Home = ({ dispatch, loading }) => {
-  const fetchData = useCallback(() => {
-    dispatch(actions.dashboard.updateDashboardAction());
-  }, [dispatch]);
-  useEffect(() => {
-    fetchData();
-  }, [fetchData]);
-
+const Home = ({ loading }) => {
   return (
     <WithSpinner loading={loading}>
       <div>Home page</div>
@@ -19,8 +11,8 @@ const Home = ({ dispatch, loading }) => {
 };
 
 const mapStateToProps = state => ({
-  dashboardData: state.dashboardState.dashboardData,
-  loading: state.dashboardState.isOnSync,
+  dashboardData: state.contactsState.dashboardData,
+  loading: state.contactsState.isOnSync,
 });
 
 export default connect(mapStateToProps)(Home);

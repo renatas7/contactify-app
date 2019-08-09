@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import { userReducer } from './dashboard/DashboardReducer';
+import { contactsReducer } from './contacts/ContactsReducer';
 import { modalsReducer } from './modals/ModalsReducer';
 
 export const reducers = combineReducers({
-  dashboardState: userReducer,
+  contactsState: contactsReducer,
   modalsState: modalsReducer,
 });
