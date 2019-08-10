@@ -1,6 +1,7 @@
 .main {
   display: inline-block;
   position: relative;
+  width: 100%;
 }
 
 .table {
@@ -10,6 +11,7 @@
   border-collapse: collapse;
   border-spacing: 0;
   border-radius: 1rem;
+  width: 100%;
 }
 
 .header {
@@ -21,12 +23,13 @@
   text-align: left;
   font-weight: 600;
   color: var(--color__font-dark);
-  background: yellow;
+  background: #0085a4;
 }
 
 .headerCell {
   display: table-cell;
   white-space: nowrap;
+  color: #fff;
 
   &:first-child {
     border-top-left-radius: 1rem;
@@ -46,17 +49,18 @@
 
 .body {
   display: table-row-group;
-  background: pink;
+  background: #fff;
+  border-radius: 20px;
 }
 
 .bodyRow {
   display: table-row;
   color: var(--color__font-dark);
   text-decoration: none;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid#eaeae8;
 
   &:hover {
-    background: red;
+    background: #e6f5f9;
     cursor: pointer;
   }
 }
