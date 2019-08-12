@@ -13,7 +13,6 @@ import { Button } from './../../components';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
 
   return (
     <div className={styles.dropdown}>

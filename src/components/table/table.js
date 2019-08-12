@@ -1,14 +1,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './table.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const Table = ({ children, header, filter, isEmpty }) => {
+  const headerColor = color => {
+    return { background: color };
+  };
   const row = Array.from({ length: header.length });
+
+  const headerClick = filterName => {
+    console.log('header filter was clicked ' + filterName);
+  };
 
   const renderHeader = () =>
     header.map((col, i) => (
-      <span className={styles.headerCell} key={i} role="columnheader">
-        {filter ? col : <div className={styles.headerTitle}>{col}</div>}
+      <span
+        className={styles.headerCell}
+        style={headerColor(col.backround)}
+        key={i}
+        role="columnheader"
+      >
+        {col.filter ? (
+          <div
+            className={styles.headerTitleWithFilter}
+            onClick={() => headerClick(col.name)}
+          >
+            <span>{col.name}</span>
+            <FontAwesomeIcon icon={faArrowDown} />
+          </div>
+        ) : (
+          <div
+            className={
+              col.align !== undefined && col.align === 'right'
+                ? styles.headerTitleRight
+                : styles.headerTitle
+            }
+          >
+            {col.name}{' '}
+          </div>
+        )}
       </span>
     ));
 
@@ -45,8 +77,11 @@ export const TableRow = ({ children, onClick }) => (
   </div>
 );
 
-export const TableCell = ({ children }) => (
-  <span className={styles.bodyCell} role="gridcell">
+export const TableCell = ({ children, align }) => (
+  <span
+    className={align === 'right' ? styles.bodyCellAlignRight : styles.bodyCell}
+    role="gridcell"
+  >
     {children}
   </span>
 );

@@ -23,7 +23,7 @@
   text-align: left;
   font-weight: 600;
   color: var(--color__font-dark);
-  background: #0085a4;
+  // background: #0085a4;
 }
 
 .headerCell {
@@ -41,6 +41,15 @@
   .headerTitle {
     padding: 1.5rem;
   }
+  .headerTitleRight {
+    text-align: right;
+  }
+
+  .headerTitleWithFilter {
+    padding: 1.5rem 0.3rem 1.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &:hover {
     cursor: pointer;
@@ -50,7 +59,6 @@
 .body {
   display: table-row-group;
   background: #fff;
-  border-radius: 20px;
 }
 
 .bodyRow {
@@ -68,6 +76,12 @@
 .bodyCell {
   display: table-cell;
   padding: 1.5rem;
+}
+
+.bodyCellAlignRight {
+  display: table-cell;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  text-align: right;
 }
 
 .emptyRow {
