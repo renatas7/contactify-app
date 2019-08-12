@@ -94,10 +94,11 @@ const ContactList = ({ dispatch, contactsData }) => {
           email={user.email}
           phone={user.phone}
         />
-
-        <Table header={tableHeader} isEmpty={!contactsData.length}>
-          {renderTable()}
-        </Table>
+        <div className={styles.tableContainer}>
+          <Table header={tableHeader} isEmpty={!contactsData.length}>
+            {renderTable()}
+          </Table>
+        </div>
       </Paper>
     </div>
   );

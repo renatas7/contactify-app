@@ -19,7 +19,7 @@ const updateDashboardAction = () => {
   };
 };
 
-const setDashboardDataAction = payload => {
+const setTableDataAction = payload => {
   return {
     type: constants.contacts.SET_DASHBOARD_DATA,
     payload,
@@ -39,11 +39,19 @@ const pushContactsDataAction = payload => {
   };
 };
 
+const setTableFilterAction = payload => {
+  return {
+    type: constants.contacts.SET_TABLE_FILTER,
+    payload,
+  };
+};
+
 export const userActions = {
   clearUserStateAction,
   updateDashboardAction,
   setUserOnSyncFlagAction,
-  setDashboardDataAction,
+  setTableDataAction,
   setContactsDataAction,
   pushContactsDataAction,
+  setTableFilterAction,
 };

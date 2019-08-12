@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './filterDropdown.module.scss';
 
-const FilterDropdown = () => {
+const FilterDropdown = ({ onChange, value }) => {
   return (
-    <select className={styles.select}>
+    <select className={styles.select} onChange={onChange} value={value}>
+      <option value="Name">Name</option>
       <option value="City">City</option>
-      <option value="name">Name</option>
-      <option value="active">Active</option>
     </select>
   );
 };

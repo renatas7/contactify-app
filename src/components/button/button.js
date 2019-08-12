@@ -14,9 +14,18 @@ const Button = ({ type, children, ...rest }) => {
       </button>
     );
   } else if (type === 'filter') {
-    return <button className={styles.filterButton}> {children} </button>;
+    return (
+      <button className={styles.filterButton} {...rest}>
+        {' '}
+        {children}{' '}
+      </button>
+    );
   } else if (type === 'add') {
-    return <button className={styles.add}>{children}</button>;
+    return (
+      <button className={styles.add} {...rest}>
+        {children}
+      </button>
+    );
   }
 };
 
