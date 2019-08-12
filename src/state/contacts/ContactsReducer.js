@@ -12,7 +12,7 @@ export const contactsReducer = (state = INITIAL_STATE, action) => {
         ...state,
         isOnSync: action.flag,
       };
-    case constants.contacts.SET_DASHBOARD_DATA:
+    case constants.contacts.SET_TABLE_DATA:
       return {
         ...state,
         contactsData: action.payload,

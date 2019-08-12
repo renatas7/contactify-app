@@ -1,6 +1,7 @@
 import { actions } from '../actions';
-import { call, put } from 'redux-saga/effects';
+import { call, put, select } from 'redux-saga/effects';
 import { Api } from './../../api/api';
+import { selectContactsData } from './../../utils/selectors';
 
 function* getContactsSaga() {
   try {
@@ -44,4 +45,17 @@ function* setTableFilterSaga(action) {
   }
 }
 
-export { getContactsSaga, setTableFilterSaga };
+function* getTableSortingSaga(action) {
+  try {
+    yield put(actions.contacts.setUserOnSyncFlagAction(true));
+    const data = yield select(selectContactsData);
+    const sortedData = data.sort((a, b) => a.name.localeCompare(b.name));
+    yield put(actions.contacts.setTableDataAction(sortedData));
+  } catch (error) {
+    console.log(error);
+  } finally {
+    yield put(actions.contacts.setUserOnSyncFlagAction(false));
+  }
+}
+
+export { getContactsSaga, setTableFilterSaga, getTableSortingSaga };

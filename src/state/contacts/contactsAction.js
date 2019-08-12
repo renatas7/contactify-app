@@ -21,7 +21,7 @@ const updateDashboardAction = () => {
 
 const setTableDataAction = payload => {
   return {
-    type: constants.contacts.SET_DASHBOARD_DATA,
+    type: constants.contacts.SET_TABLE_DATA,
     payload,
   };
 };
@@ -46,6 +46,13 @@ const setTableFilterAction = payload => {
   };
 };
 
+const setTableSortingAction = payload => {
+  return {
+    type: constants.contacts.SET_TABLE_SORTING,
+    payload,
+  };
+};
+
 export const userActions = {
   clearUserStateAction,
   updateDashboardAction,
@@ -54,4 +61,5 @@ export const userActions = {
   setContactsDataAction,
   pushContactsDataAction,
   setTableFilterAction,
+  setTableSortingAction,
 };

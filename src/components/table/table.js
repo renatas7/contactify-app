@@ -4,15 +4,11 @@ import styles from './table.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
-const Table = ({ children, header, filter, isEmpty }) => {
+const Table = ({ children, header, isEmpty, sorting }) => {
   const headerColor = color => {
     return { background: color };
   };
   const row = Array.from({ length: header.length });
-
-  const headerClick = filterName => {
-    console.log('header filter was clicked ' + filterName);
-  };
 
   const renderHeader = () =>
     header.map((col, i) => (
@@ -25,7 +21,7 @@ const Table = ({ children, header, filter, isEmpty }) => {
         {col.filter ? (
           <div
             className={styles.headerTitleWithFilter}
-            onClick={() => headerClick(col.name)}
+            onClick={() => sorting(col.name)}
           >
             <span>{col.name}</span>
             <FontAwesomeIcon icon={faArrowDown} />
@@ -94,8 +90,8 @@ Table.defaultProps = {
 Table.propTypes = {
   children: PropTypes.node.isRequired,
   header: PropTypes.array.isRequired,
-  filter: PropTypes.bool,
   isEmpty: PropTypes.bool.isRequired,
+  sorting: PropTypes.func,
 };
 
 TableRow.defaultProps = {

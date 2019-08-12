@@ -2,12 +2,12 @@ import React from 'react';
 import Routes from './routes';
 import './style/index.scss';
 
-function App() {
+const App = () => {
   return (
     <div>
       <Routes />
     </div>
   );
-}
+};
 
 export default App;

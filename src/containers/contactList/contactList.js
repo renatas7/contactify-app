@@ -4,7 +4,13 @@ import { connect } from 'react-redux';
 // import { WithSpinner } from '../../components';
 import { Paper } from './../../components';
 import styles from './contactList.module.scss';
-import { UserCard, Table, TableRow, TableCell } from './../../components';
+import {
+  UserCard,
+  Table,
+  TableRow,
+  TableCell,
+  WithSpinner,
+} from './../../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEye,
@@ -14,7 +20,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
-const ContactList = ({ dispatch, contactsData }) => {
+const ContactList = ({ dispatch, contactsData, loading }) => {
   const fetchData = useCallback(() => {
     dispatch(actions.contacts.updateDashboardAction());
   }, [dispatch]);
@@ -84,6 +90,10 @@ const ContactList = ({ dispatch, contactsData }) => {
     setUser(data);
   };
 
+  const sorting = sort => {
+    dispatch(actions.contacts.setTableSortingAction(sort));
+  };
+
   return (
     <div className={styles.container}>
       <Paper type="header">
@@ -95,9 +105,15 @@ const ContactList = ({ dispatch, contactsData }) => {
           phone={user.phone}
         />
         <div className={styles.tableContainer}>
-          <Table header={tableHeader} isEmpty={!contactsData.length}>
-            {renderTable()}
-          </Table>
+          <WithSpinner loading={loading}>
+            <Table
+              header={tableHeader}
+              isEmpty={!contactsData.length}
+              sorting={sort => sorting(sort)}
+            >
+              {renderTable()}
+            </Table>
+          </WithSpinner>
         </div>
       </Paper>
     </div>
@@ -106,6 +122,7 @@ const ContactList = ({ dispatch, contactsData }) => {
 
 const mapStateToProps = state => ({
   contactsData: state.contactsState.contactsData,
+  loading: state.contactsState.isOnSync,
 });
 
 ContactList.propTypes = {
