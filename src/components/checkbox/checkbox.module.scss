@@ -2,11 +2,13 @@
   display: flex;
   font-size: 1.2rem;
   height: 1.5rem;
+  cursor: pointer;
 
   label {
     font-size: 1.2rem;
     color: #fff;
     margin-left: 0.5rem;
+    cursor: pointer;
   }
   input {
     width: 1.2rem;
@@ -18,11 +20,6 @@
     top: -1px;
     background: #ddd;
     outline: 1px solid #000;
+    cursor: pointer;
   }
 }
-
-// .checkbox {
-//     margin-left: 30px;
-//     margin-top: 10px;
-//     width: 30px;
-//     height: 15px; }

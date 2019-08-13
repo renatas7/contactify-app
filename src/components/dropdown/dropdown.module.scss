@@ -1,14 +1,15 @@
 .dropdown {
-  width: 17rem;
+  width: 18rem;
 }
 
 .dropdownContent {
   display: none;
   position: relative;
-  margin-top: 0.87rem;
+  margin-top: 1.2rem;
   margin-right: 2rem;
   background-color: #09a2c1;
-  width: 17rem;
+  width: 20rem;
+  right: 2rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 0.5rem 0 0.5rem 0.5rem;
@@ -38,16 +39,18 @@
 .dropdownContent:before {
   border-color: rgba(194, 225, 245, 0);
   border-bottom-color: #0ba1c0;
-  border-width: 0.6rem;
-  margin-left: -0.6rem;
+  border-width: 1rem;
+  margin-left: -1rem;
 }
 
 .dropdownContent div {
   color: #ffffff;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1rem;
   text-decoration: none;
   display: block;
   border-bottom: 1px solid #3797aa;
+  font-size: 1.4rem;
+  cursor: pointer;
   :last-child {
     border-bottom: none;
   }

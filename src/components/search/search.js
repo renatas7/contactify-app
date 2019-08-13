@@ -9,7 +9,9 @@ const Search = ({ type, filterParam, onChange, value }) => {
     return (
       <div className={styles.searchBoxContainer}>
         <input className={styles.searchBox} placeholder="Search"></input>
-        <FontAwesomeIcon icon={faSearch} className={styles.searchIcon} />
+        <button>
+          <FontAwesomeIcon icon={faSearch} className={styles.searchIcon} />
+        </button>
       </div>
     );
   } else if (type === 'filter') {

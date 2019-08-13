@@ -2,7 +2,7 @@
   width: 100%;
   height: var(--height__button-bg);
   border-radius: var(--radius__button-bg);
-  padding-left: var(--radius__button-bg);
+  padding-left: 1rem;
   border: 1px solid #132428;
   font-size: 14px;
   position: relative;
@@ -11,12 +11,23 @@
 .searchIcon {
   float: right;
   position: relative;
-  margin-top: -2.5rem;
+  margin-top: -0.1rem;
   color: grey;
-  margin-right: 1.4rem;
+  margin-right: 1rem;
   font-size: 1.4rem;
 }
 
 .searchBoxContainer {
   width: 22rem;
+  position: relative;
+  button {
+    height: 3.3rem;
+    width: 3.3rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.1rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
 }

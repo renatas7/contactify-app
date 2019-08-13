@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 
 const Links = () => {
-  console.log(navLinks);
   const renderLinks = () =>
     navLinks.map(({ name, url }) => (
       <li className={styles.item} key={name}>
