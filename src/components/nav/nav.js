@@ -4,31 +4,31 @@ import { NavLink } from 'react-router-dom';
 import styles from './nav.module.scss';
 import { config } from './../../api/config';
 
-const Nav = () => {
-  const links = [
-    {
-      name: config.PAGES.dashboard,
-      url: config.APP_PATHS.dashboard,
-    },
-    {
-      name: config.PAGES.contacts,
-      url: config.APP_PATHS.contacts,
-    },
-    {
-      name: config.PAGES.notifications,
-      url: config.APP_PATHS.notifications,
-    },
-  ];
+export const navLinks = [
+  {
+    name: config.PAGES.dashboard,
+    url: config.APP_PATHS.dashboard,
+  },
+  {
+    name: config.PAGES.contacts,
+    url: config.APP_PATHS.contacts,
+  },
+  {
+    name: config.PAGES.notifications,
+    url: config.APP_PATHS.notifications,
+  },
+];
 
+const NavFooter = () => {
   const renderLinks = () =>
-    links.map(({ name, url }) => (
+    navLinks.map(({ name, url }) => (
       <li className={styles.item} key={name}>
         <NavLink
           className={styles.link}
           activeClassName={styles.active}
           to={url}
         >
-          <span className={styles.label}>{name}</span>
+          <span className={styles.label}>{name.toUpperCase()}</span>
         </NavLink>
       </li>
     ));
@@ -42,4 +42,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavFooter;

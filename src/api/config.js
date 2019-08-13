@@ -1,12 +1,12 @@
 export const config = {
   APP_PATHS: {
     dashboard: '/dashboard',
-    contacts: '/', //because contact route is the only one route with info I made it default
+    contacts: '/contacts',
     notifications: '/notifications',
   },
   PAGES: {
-    dashboard: 'DASHBOARD',
-    contacts: 'CONTACTS',
-    notifications: 'NOTIFICATIONS',
+    dashboard: 'Dashboard',
+    contacts: 'Contacts',
+    notifications: 'Notifications',
   },
 };

@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1.8rem;
+  :first-child {
+    display: flex;
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    :first-child {
+      margin-right: 3rem;
+    }
+  }
+  .force {
+    display: flex;
+    margin-top: 1rem;
+    :first-child {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.bigIcon {
+  font-size: 3.5rem;
+}

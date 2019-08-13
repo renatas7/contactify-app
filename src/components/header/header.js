@@ -11,7 +11,7 @@ const Header = () => {
         activeclassname={styles.active}
         url={config.APP_PATHS.dashboard}
       >
-        Home
+        dashboard
       </Button>
       <Button
         color="primary"
@@ -25,7 +25,7 @@ const Header = () => {
         activeclassname={styles.active}
         url={config.APP_PATHS.notifications}
       >
-        Second
+        notifications
       </Button>
     </div>
   );

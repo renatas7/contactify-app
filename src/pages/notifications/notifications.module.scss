@@ -1,0 +1,10 @@
+.container {
+  height: calc(100vh - 24rem);
+  background: linear-gradient(to bottom right, #007f79, #0b3f6b);
+  padding: 10rem;
+  p {
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+  }
+}
