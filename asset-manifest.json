@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/contactify-app/static/css/main.72cb4922.chunk.css",
-    "main.js": "/contactify-app/static/js/main.d867a1ed.chunk.js",
-    "main.js.map": "/contactify-app/static/js/main.d867a1ed.chunk.js.map",
+    "main.js": "/contactify-app/static/js/main.426ba84c.chunk.js",
+    "main.js.map": "/contactify-app/static/js/main.426ba84c.chunk.js.map",
     "runtime~main.js": "/contactify-app/static/js/runtime~main.4157fde2.js",
     "runtime~main.js.map": "/contactify-app/static/js/runtime~main.4157fde2.js.map",
-    "static/js/2.f4a138e7.chunk.js": "/contactify-app/static/js/2.f4a138e7.chunk.js",
-    "static/js/2.f4a138e7.chunk.js.map": "/contactify-app/static/js/2.f4a138e7.chunk.js.map",
+    "static/js/2.0eed1737.chunk.js": "/contactify-app/static/js/2.0eed1737.chunk.js",
+    "static/js/2.0eed1737.chunk.js.map": "/contactify-app/static/js/2.0eed1737.chunk.js.map",
     "index.html": "/contactify-app/index.html",
-    "precache-manifest.c2a33361382df28a9459344263ec8e6e.js": "/contactify-app/precache-manifest.c2a33361382df28a9459344263ec8e6e.js",
+    "precache-manifest.92abc0e2c4be9112048b06d352666b75.js": "/contactify-app/precache-manifest.92abc0e2c4be9112048b06d352666b75.js",
     "service-worker.js": "/contactify-app/service-worker.js",
     "static/css/main.72cb4922.chunk.css.map": "/contactify-app/static/css/main.72cb4922.chunk.css.map"
   }
