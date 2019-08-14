@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/contactify-app/static/css/main.72cb4922.chunk.css",
-    "main.js": "/contactify-app/static/js/main.fd505f12.chunk.js",
-    "main.js.map": "/contactify-app/static/js/main.fd505f12.chunk.js.map",
+    "main.js": "/contactify-app/static/js/main.134e949f.chunk.js",
+    "main.js.map": "/contactify-app/static/js/main.134e949f.chunk.js.map",
     "runtime~main.js": "/contactify-app/static/js/runtime~main.4157fde2.js",
     "runtime~main.js.map": "/contactify-app/static/js/runtime~main.4157fde2.js.map",
     "static/js/2.0eed1737.chunk.js": "/contactify-app/static/js/2.0eed1737.chunk.js",
     "static/js/2.0eed1737.chunk.js.map": "/contactify-app/static/js/2.0eed1737.chunk.js.map",
     "index.html": "/contactify-app/index.html",
-    "precache-manifest.db2375ff9b2e9b16c846cccd618c7220.js": "/contactify-app/precache-manifest.db2375ff9b2e9b16c846cccd618c7220.js",
+    "precache-manifest.a3f85b4eb51c08dab13b57021250161b.js": "/contactify-app/precache-manifest.a3f85b4eb51c08dab13b57021250161b.js",
     "service-worker.js": "/contactify-app/service-worker.js",
     "static/css/main.72cb4922.chunk.css.map": "/contactify-app/static/css/main.72cb4922.chunk.css.map"
   }
