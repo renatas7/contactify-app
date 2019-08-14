@@ -4,16 +4,16 @@
   justify-content: space-between;
   font-size: 1.4rem;
   color: #fff;
-  padding: 1.8rem;
+  padding: 1.8rem 1.8rem 1.8rem 1rem;
   :first-child {
     display: flex;
     p {
       margin-bottom: 0.5rem;
     }
 
-    :first-child {
-      margin-right: 3rem;
-    }
+    // :first-child {
+    //   margin-right: 1.5rem;
+    // }
   }
   .force {
     display: flex;
@@ -26,4 +26,11 @@
 
 .bigIcon {
   font-size: 3.5rem;
+}
+
+.iconContainer {
+  width: 7rem;
+  :first-child {
+    margin: 0 auto;
+  }
 }

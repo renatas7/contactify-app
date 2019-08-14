@@ -7,12 +7,12 @@ const LastSync = () => {
   return (
     <div className={styles.container}>
       <div>
-        <span>
+        <div className={styles.iconContainer}>
           <FontAwesomeIcon
             icon={faCloudDownloadAlt}
             className={styles.faCopyright}
           />
-        </span>
+        </div>
         <div>
           <p>Last Synced</p>
           <p>2016-06-02 14:33:10</p>

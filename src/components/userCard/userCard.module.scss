@@ -1,6 +1,6 @@
 .container {
-  width: 29rem;
-  height: 40rem;
+  width: 31rem;
+  height: 41rem;
   background: #fff;
   border-radius: var(--radius__users);
   text-align: center;
@@ -12,12 +12,12 @@
 }
 
 .infoContainer {
-  margin: 2rem auto auto 0rem;
+  margin: 3.5rem auto auto 0rem;
 }
 
 table {
   text-align: center;
-  width: 20rem;
+  width: 23rem;
   font-size: 1.2rem;
   tr > td {
     padding-bottom: 1rem;
@@ -25,11 +25,16 @@ table {
   tr :first-child {
     text-align: right;
     color: var(--color__text-grey-light);
-    width: 40%;
+    width: 30%;
   }
   tr :last-child {
     text-align: left;
     padding-left: 0.8rem;
-    color: var(--color__text-grey);
+  }
+  tr:nth-child(4) {
+    td:last-child {
+      color: #00a2bd;
+      text-decoration: underline;
+    }
   }
 }

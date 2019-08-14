@@ -39,6 +39,11 @@ const Filter = ({ dispatch }) => {
             filterParam={filterParam}
             value={inputValue}
             onChange={e => setInputValue(e.target.value)}
+            onKeyPress={event => {
+              if (event.key === 'Enter') {
+                filter();
+              }
+            }}
           />
           <FilterDropdown
             value={filterParam}

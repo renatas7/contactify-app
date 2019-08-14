@@ -30,4 +30,8 @@
     border: 1px solid transparent;
     cursor: pointer;
   }
+
+  ::placeholder {
+    color: #4f4d43;
+  }
 }

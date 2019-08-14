@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
-const Search = ({ type, filterParam, onChange, value }) => {
+const Search = ({ type, filterParam, onChange, value, ...rest }) => {
   if (type === 'user') {
     return (
       <div className={styles.searchBoxContainer}>
@@ -22,6 +22,7 @@ const Search = ({ type, filterParam, onChange, value }) => {
           placeholder={filterParam}
           onChange={onChange}
           value={value}
+          {...rest}
         />
       </div>
     );
