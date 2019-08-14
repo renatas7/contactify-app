@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/contactify-app/precache-manifest.12b757d1ab0b6c9a4d7ea085ce2965bc.js"
+  "/contactify-app/precache-manifest.c2a33361382df28a9459344263ec8e6e.js"
 );
 
 self.addEventListener('message', (event) => {
