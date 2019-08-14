@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "758dc9f7388ba1f696a9e14f9a0d3541",
+    "revision": "376ba4e57b93a1c8dc37ee33de3995cb",
     "url": "/contactify-app/index.html"
   },
   {
-    "revision": "73996437b2fda35088b4",
+    "revision": "bde3444e2d4412237959",
     "url": "/contactify-app/static/css/main.72cb4922.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/contactify-app/static/js/2.0eed1737.chunk.js"
   },
   {
-    "revision": "73996437b2fda35088b4",
-    "url": "/contactify-app/static/js/main.92a4b66a.chunk.js"
+    "revision": "bde3444e2d4412237959",
+    "url": "/contactify-app/static/js/main.2e51a4b6.chunk.js"
   },
   {
     "revision": "08928b3b8498ab6b5d7d",
